@@ -1,25 +1,13 @@
 <!DOCTYPE html>
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$db = "prueba1";
-
-try {
-  $conn = new PDO("mysql:host=$servername;dbname=$db", $username, $password);
-  // set the PDO error mode to exception
-  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-  // echo "Connected successfully";
-} catch(PDOException $e) {
-  echo "Connection failed: " . $e->getMessage();
-}
+include('conexion.php');
 ?>
 <html lang="es">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatble" content="IE-edge">
 	<meta name="viewport" content="width=dvice-width">
-	<title>PHP Intro</title>
+	<title>INTRO PHP</title>
 </head>
 <body>
 	<h1>MANEJADOR DE TAREAS</h1>
